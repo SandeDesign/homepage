@@ -107,9 +107,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       
       // Use Cases
       useCases: {
-        nl: 'Automatisering',
+        nl: 'Automatisering- ',
         en: 'Automation',
-        de: 'Automatisierung'
+        de: 'Automatisierung- '
       },
       useCasesTitle: {
         nl: 'Toepassingen',
