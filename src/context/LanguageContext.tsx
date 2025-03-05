@@ -107,14 +107,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       
       // Use Cases
       useCases: {
-        nl: 'Automatisering- ',
+        nl: 'Automatisering',
         en: 'Automation',
-        de: 'Automatisierung- '
+        de: 'Automatisierung'
       },
       useCasesTitle: {
-        nl: 'Toepassingen',
-        en: 'Use Cases',
-        de: 'Anwendungsfälle'
+        nl: '',
+        en: '',
+        de: ''
       },
       useCasesDescription: {
         nl: 'Ontdek hoe bedrijven hun activiteiten transformeren met krachtige automatiseringsoplossingen.',
