@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 232 29% 11%;
+  --foreground: 210 40% 98%;
+  
+  --card: 232 29% 11%;
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 232 29% 11%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 244 76% 59%;
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 217 19% 27%;
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 217 19% 27%;
+  --muted-foreground: 215 20.2% 65.1%;
+  
+  --accent: 217 19% 27%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 217 19% 27%;
+  --input: 217 19% 27%;
+  --ring: 224 76% 48%;
+
+  --success: 142 76% 36%;
+  --success-foreground: 210 40% 98%;
+  --warning: 38 92% 50%;
+  --radius: 0.75rem;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  background-image: radial-gradient(
+    circle at center,
+    hsl(var(--secondary)) 0%,
+    hsl(var(--background)) 100%
+  );
+}
+
+.device {
+  @apply relative bg-card rounded-2xl border-2 border-border/50 shadow-2xl;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+              0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.device-header {
+  @apply flex items-center justify-between p-4 border-b border-border/50;
+}
+
+.device-dots {
+  @apply flex gap-1;
+}
+
+.device-dot {
+  @apply w-1 h-1 rounded-full bg-muted-foreground/50;
+}
+
+.device-screen {
+  @apply p-6 space-y-6;
+}
+
+.skill-button {
+  @apply w-full p-3 flex items-center gap-3 rounded-lg bg-secondary/50 
+         hover:bg-primary/20 transition-colors duration-300;
+}
+
+.grid-item {
+  @apply relative aspect-square rounded-xl bg-secondary/50 p-4
+         hover:bg-primary/20 transition-all duration-300
+         flex items-center justify-center;
+}
+
+.contact-button {
+  @apply w-full py-3 px-6 bg-[#22c55e] hover:bg-[#22c55e]/90
+         text-white font-medium rounded-lg transition-colors
+         flex items-center justify-center gap-2;
+}
+
+.portfolio-container {
+  @apply bg-secondary/20 rounded-xl p-4;
+}
+
+.portfolio-nav {
+  @apply flex items-center justify-between mb-4;
+}
+
+.portfolio-title {
+  @apply flex items-center gap-2 text-sm font-medium text-muted-foreground;
+}
+
+.portfolio-controls {
+  @apply flex gap-2;
+}
+
+.portfolio-image {
+  @apply rounded-xl overflow-hidden;
+}
